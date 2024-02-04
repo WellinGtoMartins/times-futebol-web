@@ -3,6 +3,7 @@ package br.well.martins.services;
 
 import br.well.martins.models.*;
 import br.well.martins.repositories.Repository;
+import br.well.martins.repositories.TimeRepository;
 import br.well.martins.repositories.TimeRepositoryImpl;
 import br.well.martins.repositories.UsuarioRepository;
 import jakarta.ejb.Stateless;
@@ -15,7 +16,7 @@ import java.util.Optional;
 public class TimeServiceImpl implements TimeService{
 
     @Inject
-    private Repository<Time> timeRepository;
+    private TimeRepository timeRepository;
 
     @Inject
     private Repository<Cidade> cidadeRepository;
@@ -93,6 +94,16 @@ public class TimeServiceImpl implements TimeService{
     @Override
     public Optional<Posicao> posicaoPorId(Integer id) {
         return Optional.ofNullable(posicaoRepository.porId(id));
+    }
+
+    @Override
+    public void adicionarJogador(Jogador jogador, Time time) {
+        timeRepository.adicionarJogador(jogador, time);
+    }
+
+    @Override
+    public void excluirJogador(Jogador jogador, Time time) {
+        timeRepository.excluirJogador(jogador, time);
     }
 
 

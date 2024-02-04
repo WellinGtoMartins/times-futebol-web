@@ -27,5 +27,8 @@ public interface TimeService {
     List<Posicao> listarPosicoes();
     Optional<Posicao> posicaoPorId(Integer id);
 
+    void adicionarJogador(Jogador jogador, Time time);
+    void excluirJogador(Jogador jogador, Time time);
+
 
 }

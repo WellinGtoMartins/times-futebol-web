@@ -9,7 +9,7 @@ import jakarta.persistence.EntityManager;
 import java.util.List;
 
 @RequestScoped
-public class TimeRepositoryImpl implements Repository<Time> {
+public class TimeRepositoryImpl implements TimeRepository {
 
     @Inject
     private EntityManager em;
@@ -46,5 +46,19 @@ public class TimeRepositoryImpl implements Repository<Time> {
     public void excluir(Integer id) {
         Time time = porId(id);
         em.remove(time);
+    }
+
+    @Override
+    public void adicionarJogador(Jogador jogador, Time time) {
+        jogador.setTime(time);
+        time.getJogadores().add(jogador);
+        em.persist(time);
+    }
+
+    @Override
+    public void excluirJogador(Jogador jogador, Time time) {
+        time.getJogadores().size();
+        time.getJogadores().remove(jogador);
+        em.merge(time);
     }
 }

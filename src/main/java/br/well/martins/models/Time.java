@@ -47,7 +47,7 @@ public class Time {
     @JoinColumn(name = "tecnico", referencedColumnName = "id", nullable = false)
     private Pessoa tecnico;
 
-    @OneToMany(mappedBy = "time", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "time", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Jogador> jogadores = new ArrayList<>();
 
     public Time() {

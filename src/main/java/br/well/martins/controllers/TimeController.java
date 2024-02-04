@@ -14,6 +14,7 @@ import jakarta.inject.Named;
 import org.primefaces.PrimeFaces;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @ViewScoped
@@ -99,9 +100,8 @@ public class TimeController implements Serializable {
     public void salvarJogador() {
         String mensagem;
         if (novoJogador) {
-            jogador.setTime(time);
-            time.adicionarJogador(jogador);
-            timeService.salvar(time);
+            timeService.adicionarJogador(jogador, time);
+            jogadorService.salvar(jogador);
             mensagem = " adicionado com êxito!";
         } else {
             jogadorService.salvar(jogador);
@@ -117,8 +117,9 @@ public class TimeController implements Serializable {
     }
 
     public void excluirJogador(Integer rowIndex) {
-        alterarJogador(rowIndex);
-        time.removerJogador(jogador.getId());
+        this.jogador = time.getJogadores().get(rowIndex);
+        jogadorService.excluir(jogador.getId());
+        this.novoJogador = true;
     }
 
     @Produces

@@ -9,7 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07786c5b-0ba5-4dda-ab92-f5590c381a8b" name="Changes" comment="" />
+    <list default="true" id="07786c5b-0ba5-4dda-ab92-f5590c381a8b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/TimeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/JogadorRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/JogadorRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/TimeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/TimeRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/services/TimeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/TimeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/services/TimeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/TimeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/privado/time/form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/privado/time/form.xhtml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +30,13 @@
       <list>
         <option value="CSS File" />
         <option value="jsf" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -36,40 +49,42 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2b9CVw77i15eZYkqb6XH7Sij6tA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="foldersAlwaysOnTop" value="false" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
+    <option name="showVisibilityIcons" value="true" />
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JBoss/WildFly Server.JBoss/WildFly 27.0.0.Final.executor": "Run",
-    "JBoss/WildFly Server.JBoss/WildFly 31.0.0.Final.executor": "Debug",
-    "Maven.times-futebol-web [clean].executor": "Run",
-    "Maven.times-futebol-web [deploy].executor": "Run",
-    "Maven.times-futebol-web [install].executor": "Run",
-    "Maven.times-futebol-web [package].executor": "Run",
-    "Maven.times-futebol-web [payara-micro:bundle].executor": "Run",
-    "Maven.times-futebol-web [wildfly:deploy].executor": "Run",
-    "Payara Server.Payara 6.10.0.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/JakartaEE/times-futebol-web",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JBoss/WildFly Server.JBoss/WildFly 27.0.0.Final.executor&quot;: &quot;Run&quot;,
+    &quot;JBoss/WildFly Server.JBoss/WildFly 31.0.0.Final.executor&quot;: &quot;Debug&quot;,
+    &quot;Maven.times-futebol-web [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.times-futebol-web [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.times-futebol-web [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.times-futebol-web [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.times-futebol-web [payara-micro:bundle].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.times-futebol-web [wildfly:deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Payara Server.Payara 6.10.0.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/JakartaEE/times-futebol-web&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp\privado\time" />
@@ -160,18 +175,6 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings />
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -223,7 +226,8 @@
       <workItem from="1706866302174" duration="939000" />
       <workItem from="1706893902756" duration="6311000" />
       <workItem from="1706900291458" duration="13220000" />
-      <workItem from="1706963282206" duration="24136000" />
+      <workItem from="1706963282206" duration="24447000" />
+      <workItem from="1707050162919" duration="8681000" />
     </task>
     <servers />
   </component>
@@ -235,7 +239,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java</url>
-          <line>65</line>
+          <line>66</line>
           <properties class="br.well.martins.controllers.TimeController" method="salvarTime">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -244,7 +248,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java</url>
-          <line>58</line>
+          <line>59</line>
           <properties class="br.well.martins.controllers.TimeController" method="alterarTime">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -253,21 +257,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java</url>
-          <line>48</line>
+          <line>49</line>
           <properties class="br.well.martins.controllers.TimeController" method="novoTime">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java</url>
-          <line>118</line>
-          <properties class="br.well.martins.controllers.TimeController" method="excluirJogador">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/models/Time.java</url>
@@ -278,10 +273,47 @@
           </properties>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java</url>
+          <line>118</line>
+          <properties class="br.well.martins.controllers.TimeController" method="excluirJogador">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java</url>
+          <line>99</line>
+          <properties class="br.well.martins.controllers.TimeController" method="salvarJogador">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java</url>
+          <line>92</line>
+          <properties class="br.well.martins.controllers.TimeController" method="novoJogador">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java</url>
+          <line>113</line>
+          <properties class="br.well.martins.controllers.TimeController" method="alterarJogador">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="br.well.martins.models.Time" memberName="jogadores" />
         <PinnedItemInfo parentTag="br.well.martins.models.Time" memberName="nome" />
       </pinned-members>
     </pin-to-top-manager>
