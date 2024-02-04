@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="times-futebol-web:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="07786c5b-0ba5-4dda-ab92-f5590c381a8b" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="jsf" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2b9CVw77i15eZYkqb6XH7Sij6tA" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JBoss/WildFly Server.JBoss/WildFly 27.0.0.Final.executor": "Run",
+    "JBoss/WildFly Server.JBoss/WildFly 31.0.0.Final.executor": "Debug",
+    "Maven.times-futebol-web [clean].executor": "Run",
+    "Maven.times-futebol-web [deploy].executor": "Run",
+    "Maven.times-futebol-web [install].executor": "Run",
+    "Maven.times-futebol-web [package].executor": "Run",
+    "Maven.times-futebol-web [payara-micro:bundle].executor": "Run",
+    "Maven.times-futebol-web [wildfly:deploy].executor": "Run",
+    "Payara Server.Payara 6.10.0.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/JakartaEE/times-futebol-web",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp\privado\time" />
+      <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp\privado\cidade" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp" />
+      <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp\WEB-INF" />
+      <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp\resources\img" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.well.martins.services" />
+      <recent name="br.well.martins.repositories" />
+      <recent name="br.well.martins.configs" />
+      <recent name="br.well.martins.controllers" />
+      <recent name="br.well.martins.repositores" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="JBoss/WildFly 31.0.0.Final" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss/WildFly 31.0.0.Final" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="C:\Program Files (x86)\Java\zulu17.46.19-ca-jdk17.0.9-win_x64" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="times-futebol-web:war">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="SERVER" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" />
+        <option name="USERNAME" value="admin" />
+        <option name="CREDENTIAL_ALIAS" value="677f3d1b-85b7-4dee-bd3d-d90b957a154a" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="JBoss" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51679" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="times-futebol-web:war" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07786c5b-0ba5-4dda-ab92-f5590c381a8b" name="Changes" comment="" />
+      <created>1705617934481</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705617934481</updated>
+      <workItem from="1705617935520" duration="309000" />
+      <workItem from="1705618351835" duration="437000" />
+      <workItem from="1705618815023" duration="364000" />
+      <workItem from="1705619186780" duration="8681000" />
+      <workItem from="1705705365858" duration="9553000" />
+      <workItem from="1705745192086" duration="38708000" />
+      <workItem from="1705838417994" duration="4906000" />
+      <workItem from="1705843450020" duration="391000" />
+      <workItem from="1705844142807" duration="18749000" />
+      <workItem from="1705865850228" duration="708000" />
+      <workItem from="1705873653573" duration="3369000" />
+      <workItem from="1705877961414" duration="1056000" />
+      <workItem from="1705914834080" duration="724000" />
+      <workItem from="1705937921782" duration="798000" />
+      <workItem from="1705963059940" duration="8792000" />
+      <workItem from="1706048480304" duration="5723000" />
+      <workItem from="1706054303451" duration="6265000" />
+      <workItem from="1706108119838" duration="3310000" />
+      <workItem from="1706135459248" duration="3453000" />
+      <workItem from="1706138954685" duration="389000" />
+      <workItem from="1706139368664" duration="652000" />
+      <workItem from="1706140038989" duration="411000" />
+      <workItem from="1706140617075" duration="290000" />
+      <workItem from="1706141150922" duration="264000" />
+      <workItem from="1706141447898" duration="3910000" />
+      <workItem from="1706145724942" duration="846000" />
+      <workItem from="1706146771190" duration="311000" />
+      <workItem from="1706222261449" duration="7328000" />
+      <workItem from="1706287970147" duration="17685000" />
+      <workItem from="1706391102753" duration="25069000" />
+      <workItem from="1706470948021" duration="1547000" />
+      <workItem from="1706476694989" duration="6296000" />
+      <workItem from="1706541843906" duration="1713000" />
+      <workItem from="1706566743599" duration="10417000" />
+      <workItem from="1706627739442" duration="1750000" />
+      <workItem from="1706653253732" duration="7359000" />
+      <workItem from="1706740901425" duration="11997000" />
+      <workItem from="1706798707673" duration="3735000" />
+      <workItem from="1706826094247" duration="12297000" />
+      <workItem from="1706866302174" duration="939000" />
+      <workItem from="1706893902756" duration="6311000" />
+      <workItem from="1706900291458" duration="13220000" />
+      <workItem from="1706963282206" duration="24136000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java</url>
+          <line>65</line>
+          <properties class="br.well.martins.controllers.TimeController" method="salvarTime">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java</url>
+          <line>58</line>
+          <properties class="br.well.martins.controllers.TimeController" method="alterarTime">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java</url>
+          <line>48</line>
+          <properties class="br.well.martins.controllers.TimeController" method="novoTime">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java</url>
+          <line>118</line>
+          <properties class="br.well.martins.controllers.TimeController" method="excluirJogador">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/models/Time.java</url>
+          <line>124</line>
+          <properties class="br.well.martins.models.Time" method="removerJogador">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="br.well.martins.models.Time" memberName="nome" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>
