@@ -62,6 +62,7 @@ public class TimeController implements Serializable {
             this.time = t;
         });
         this.id = time.getId();
+        novoJogador = true;
     }
 
     public void salvarTime() {
@@ -72,7 +73,7 @@ public class TimeController implements Serializable {
         } else {
             mensagem = " adicionado com êxito!";
         }
-        if (!novoJogador) {
+        if (novoJogador) {
             timeService.salvar(time);
         }
         listaTimes = timeService.listar();
@@ -101,6 +102,7 @@ public class TimeController implements Serializable {
         String mensagem;
         if (novoJogador) {
             timeService.adicionarJogador(jogador, time);
+            timeService.salvar(time);
             jogadorService.salvar(jogador);
             mensagem = " adicionado com êxito!";
         } else {
@@ -113,13 +115,12 @@ public class TimeController implements Serializable {
 
     public void alterarJogador(Integer rowIndex) {
         this.jogador = time.getJogadores().get(rowIndex);
-        novoJogador = false;
     }
 
     public void excluirJogador(Integer rowIndex) {
-        this.jogador = time.getJogadores().get(rowIndex);
-        jogadorService.excluir(jogador.getId());
-        this.novoJogador = true;
+        jogador = time.getJogadores().get(rowIndex);
+        timeService.excluirJogador(jogador, time);
+        novoJogador = true;
     }
 
     @Produces

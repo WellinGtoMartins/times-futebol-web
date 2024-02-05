@@ -1,6 +1,5 @@
 package br.well.martins.repositories;
 
-import br.well.martins.models.Cidade;
 import br.well.martins.models.Pessoa;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;

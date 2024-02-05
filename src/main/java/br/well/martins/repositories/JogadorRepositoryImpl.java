@@ -41,9 +41,6 @@ public class JogadorRepositoryImpl implements Repository<Jogador>{
 
     @Override
     public void excluir(Integer id) {
-        Query query = em.createQuery("SELECT j FROM Jogador j JOIN j.time t WHERE j.id = :jogadorId");
-        query.setParameter("jogadorId", id);
-        Jogador jogador = (Jogador) query.getSingleResult();
-        em.remove(jogador);
+        em.remove(porId(id));
     }
 }

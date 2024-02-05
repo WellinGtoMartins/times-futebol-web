@@ -4,7 +4,6 @@ package br.well.martins.services;
 import br.well.martins.models.*;
 import br.well.martins.repositories.Repository;
 import br.well.martins.repositories.TimeRepository;
-import br.well.martins.repositories.TimeRepositoryImpl;
 import br.well.martins.repositories.UsuarioRepository;
 import jakarta.ejb.Stateless;
 import jakarta.inject.Inject;
@@ -105,7 +104,6 @@ public class TimeServiceImpl implements TimeService{
     public void excluirJogador(Jogador jogador, Time time) {
         timeRepository.excluirJogador(jogador, time);
     }
-
 
 
 }

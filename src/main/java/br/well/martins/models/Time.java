@@ -5,7 +5,6 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.Length;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -47,7 +46,7 @@ public class Time {
     @JoinColumn(name = "tecnico", referencedColumnName = "id", nullable = false)
     private Pessoa tecnico;
 
-    @OneToMany(mappedBy = "time", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "time", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<Jogador> jogadores = new ArrayList<>();
 
     public Time() {
@@ -115,15 +114,6 @@ public class Time {
 
     public void setJogadores(List<Jogador> jogadores) {
         this.jogadores = jogadores;
-    }
-
-    public void adicionarJogador(Jogador jogador) {
-        jogador.setTime(this);
-        this.jogadores.add(jogador);
-    }
-
-    public void removerJogador(Integer rowIndex) {
-        this.jogadores.remove(rowIndex);
     }
 
     @Override

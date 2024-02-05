@@ -28,11 +28,7 @@ public class TimeRepositoryImpl implements TimeRepository {
 
     @Override
     public void salvar(Time time) {
-       if(time.getId() != null && time.getId() > 0) {
-           em.merge(time);
-       } else {
-           em.persist(time);
-       }
+        em.merge(time);
     }
 
     @Override
@@ -52,13 +48,11 @@ public class TimeRepositoryImpl implements TimeRepository {
     public void adicionarJogador(Jogador jogador, Time time) {
         jogador.setTime(time);
         time.getJogadores().add(jogador);
-        em.persist(time);
     }
 
     @Override
     public void excluirJogador(Jogador jogador, Time time) {
-        time.getJogadores().size();
         time.getJogadores().remove(jogador);
-        em.merge(time);
+        jogador.setTime(null);
     }
 }
