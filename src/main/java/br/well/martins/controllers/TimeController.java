@@ -14,7 +14,6 @@ import jakarta.inject.Named;
 import org.primefaces.PrimeFaces;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 @ViewScoped
@@ -27,6 +26,7 @@ public class TimeController implements Serializable {
     private Integer id;
     private Boolean novoJogador;
     private Jogador jogador;
+    private String mensagem;
 
     @Inject
     private FacesContext facesContext;
@@ -66,16 +66,13 @@ public class TimeController implements Serializable {
     }
 
     public void salvarTime() {
-        String mensagem = null;
         this.time.setId(id);
         if (this.id != null && this.id > 0) {
             mensagem = " atualizado com êxito!";
         } else {
             mensagem = " adicionado com êxito!";
         }
-        if (novoJogador) {
-            timeService.salvar(time);
-        }
+        timeService.salvar(time);
         listaTimes = timeService.listar();
         facesContext.addMessage(null, new FacesMessage(time.getNome() + mensagem));
         this.time = new Time();
@@ -99,40 +96,40 @@ public class TimeController implements Serializable {
     }
 
     public void salvarJogador() {
-        String mensagem;
-        if (novoJogador) {
-            timeService.adicionarJogador(jogador, time);
-            timeService.salvar(time);
-            jogadorService.salvar(jogador);
-            mensagem = " adicionado com êxito!";
-        } else {
-            jogadorService.salvar(jogador);
-            mensagem = " atualizado com êxito!";
+        try {
+            if (novoJogador) {
+                jogadorService.salvar(jogador);
+                timeService.adicionarJogador(jogador, time);
+                mensagem = " jogador " + jogador.getNome() + " adicionado com sucesso!";
+            } else {
+                mensagem = " jogador " + jogador.getNome() + " atualizado com sucesso!";
+            }
+            facesContext.addMessage(null, new FacesMessage(mensagem));
+            this.jogador = new Jogador();
+        } catch (Exception e) {
+            facesContext.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "CPF " + jogador.getCpf() + " duplicado", null));
         }
-        facesContext.addMessage(null, new FacesMessage(jogador.getNome() + mensagem));
-        jogador = new Jogador();
     }
 
     public void alterarJogador(Integer rowIndex) {
         this.jogador = time.getJogadores().get(rowIndex);
+        novoJogador = false;
     }
 
     public void excluirJogador(Integer rowIndex) {
-        jogador = time.getJogadores().get(rowIndex);
-        timeService.excluirJogador(jogador, time);
-        novoJogador = true;
+        this.jogador = time.getJogadores().get(rowIndex);
+        time = timeService.excluirJogador(jogador, time);
+        jogadorService.excluir(jogador.getId());
+    }
+
+    public void buscarJogador() {
+        time.setJogadores(timeService.jogadorPorNome(textoBuscar));
     }
 
     @Produces
     @Model
     public List<Cidade> cidades() {
         return timeService.listarCidades();
-    }
-
-    @Produces
-    @Model
-    public List<Usuario> usuarios() {
-        return timeService.listarUsuarios();
     }
 
     @Produces

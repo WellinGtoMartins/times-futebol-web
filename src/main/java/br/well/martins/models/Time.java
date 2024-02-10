@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Objects;
 
 @Entity
-@Table(name = "time")
+@Table(name = "tb_time")
 public class Time {
 
     @Id
@@ -36,20 +36,16 @@ public class Time {
     @JoinColumn(name = "cidade", referencedColumnName = "id", nullable = false)
     private Cidade cidade;
 
-    @NotNull(message = "O usuario deve ser informado")
-    @ManyToOne
-    @JoinColumn(name = "usuario", referencedColumnName = "nome_usuario", nullable = false)
-    private Usuario usuario;
-
     @NotNull(message = "O técnico deve ser informado")
     @ManyToOne
-    @JoinColumn(name = "tecnico", referencedColumnName = "id", nullable = false)
+    @JoinColumn(name = "tecnico", referencedColumnName = "id")
     private Pessoa tecnico;
 
-    @OneToMany(mappedBy = "time", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "time", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Jogador> jogadores = new ArrayList<>();
 
     public Time() {
+
     }
 
     public Integer getId() {
@@ -92,13 +88,6 @@ public class Time {
         this.cidade = cidade;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
-    }
 
     public Pessoa getTecnico() {
         return tecnico;

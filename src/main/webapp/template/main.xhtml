@@ -6,6 +6,7 @@
         xmlns:p="http://primefaces.org/ui">
    <h:head>
       <meta charset="UTF-8"/>
+      <h:outputStylesheet library="css" name="estilo.css"/>
       <h:outputStylesheet library="webjars" name="primeflex/3.3.1/primeflex.min.css"/>
       <ui:insert name="head"/>
    </h:head>
@@ -24,13 +25,19 @@
                   <p:column>
                      <p:submenu>
                         <p:menuitem action="#{estadoController.listar()}"
-                                    value="Manutenção de Estados"
+                                    value="Estados"
                                     ajax="false"/>
                         <p:menuitem action="#{cidadeController.listar()}"
-                                    value="Manutenção de Cidades"
+                                    value="Cidades"
                                     ajax="false"/>
                         <p:menuitem action="#{timeController.listar()}"
-                                    value="Manutenção de Times"
+                                    value="Times"
+                                    ajax="false"/>
+                        <p:menuitem action="#{pessoaController.listar()}"
+                                    value="Técnicos"
+                                    ajax="false"/>
+                        <p:menuitem action="#{posicaoController.listar()}"
+                                    value="Posições"
                                     ajax="false"/>
                      </p:submenu>
                   </p:column>
@@ -42,6 +49,13 @@
                <p:autoUpdate/>
             </p:messages>
             <ui:insert name="conteudo"/>
+         </div>
+         <p:divider/>
+         <div class="p-mb-2">
+            <footer id="rodape">
+               <p><h:outputText value="Desenvolvido por Wellington 2024"/></p>
+               <p><h:outputText value="Todos os direitos reservados"/></p>
+            </footer>
          </div>
       </p:card>
    </h:body>

@@ -2,7 +2,6 @@ package br.well.martins.services;
 
 import br.well.martins.models.Estado;
 import br.well.martins.repositories.Repository;
-import jakarta.ejb.Stateful;
 import jakarta.ejb.Stateless;
 import jakarta.inject.Inject;
 
@@ -22,7 +21,11 @@ public class EstadoServiceImpl implements EstadoService {
 
     @Override
     public void salvar(Estado estado) {
-        repository.salvar(estado);
+        try {
+            repository.salvar(estado);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override

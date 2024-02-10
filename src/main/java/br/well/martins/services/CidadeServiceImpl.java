@@ -25,7 +25,11 @@ public class CidadeServiceImpl implements CidadeService{
 
     @Override
     public void salvar(Cidade cidade) {
-        cidadeRepository.salvar(cidade);
+        try {
+            cidadeRepository.salvar(cidade);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override

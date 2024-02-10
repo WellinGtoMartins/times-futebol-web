@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "jogador")
+@Table(name = "tb_jogador")
 public class Jogador extends Pessoa {
 
     @NotNull(message = "O peso deve ser informado")
@@ -21,7 +21,7 @@ public class Jogador extends Pessoa {
     private Posicao posicao;
 
     @ManyToOne
-    @JoinColumn(name = "time", referencedColumnName = "id", nullable = false)
+    @JoinColumn(name = "time", referencedColumnName = "id")
     private Time time;
 
     public Jogador() {

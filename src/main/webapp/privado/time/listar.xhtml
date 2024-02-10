@@ -6,6 +6,9 @@
                 template="/template/main.xhtml">
     <ui:define name="conteudo">
         <p:card>
+            <f:facet name="title">
+                <h:outputText value="Manutenção de Times"/>
+            </f:facet>
             <div style="display: flex; justify-content: center; align-items: center; width: 40%;">
                 <h:form style="flex: 50%">
                     <p:commandButton value="Adicionar" oncomplete="PF('dlgTime').show()" actionListener="#{timeController.novoTime()}" icon="pi pi-plus-circle"/>
@@ -30,7 +33,7 @@
                 <p:column headerText="ID">
                     <h:outputText value="#{time.id}"/>
                 </p:column>
-                <p:column headerText="Nome">
+                <p:column headerText="Nome" sortBy="#{time.nome}">
                     <h:outputText value="#{time.nome}" sortBy="#{time.nome}"/>
                 </p:column>
                 <p:column headerText="Data Fundação">

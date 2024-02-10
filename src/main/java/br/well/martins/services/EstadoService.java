@@ -3,7 +3,6 @@ package br.well.martins.services;
 import br.well.martins.models.Estado;
 import jakarta.ejb.Local;
 
-import java.io.Serializable;
 import java.util.List;
 import java.util.Optional;
 

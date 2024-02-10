@@ -21,7 +21,11 @@ public class JogadorServiceImpl implements JogadorService{
 
     @Override
     public void salvar(Jogador jogador) {
-        jogadorRepository.salvar(jogador);
+        try {
+            jogadorRepository.salvar(jogador);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -36,6 +40,8 @@ public class JogadorServiceImpl implements JogadorService{
 
     @Override
     public List<Jogador> buscarPorNome(String nome) {
-        return null;
+        return jogadorRepository.buscarPorNome(nome);
     }
+
+
 }

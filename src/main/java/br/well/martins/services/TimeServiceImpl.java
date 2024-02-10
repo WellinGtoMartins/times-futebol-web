@@ -4,7 +4,6 @@ package br.well.martins.services;
 import br.well.martins.models.*;
 import br.well.martins.repositories.Repository;
 import br.well.martins.repositories.TimeRepository;
-import br.well.martins.repositories.UsuarioRepository;
 import jakarta.ejb.Stateless;
 import jakarta.inject.Inject;
 
@@ -12,16 +11,13 @@ import java.util.List;
 import java.util.Optional;
 
 @Stateless
-public class TimeServiceImpl implements TimeService{
+public class TimeServiceImpl implements TimeService {
 
     @Inject
     private TimeRepository timeRepository;
 
     @Inject
     private Repository<Cidade> cidadeRepository;
-
-    @Inject
-    private UsuarioRepository usuarioRepository;
 
     @Inject
     private Repository<Pessoa> pessoaRepository;
@@ -36,7 +32,11 @@ public class TimeServiceImpl implements TimeService{
 
     @Override
     public void salvar(Time time) {
-        timeRepository.salvar(time);
+        try {
+            timeRepository.salvar(time);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
@@ -66,16 +66,6 @@ public class TimeServiceImpl implements TimeService{
     }
 
     @Override
-    public List<Usuario> listarUsuarios() {
-        return usuarioRepository.listar();
-    }
-
-    @Override
-    public Optional<Usuario> usuarioPorNomeUsuario(String nomeUsuario) {
-        return Optional.ofNullable(usuarioRepository.porNomeUsuario(nomeUsuario));
-    }
-
-    @Override
     public List<Pessoa> listarPessoas() {
         return pessoaRepository.listar();
     }
@@ -101,8 +91,13 @@ public class TimeServiceImpl implements TimeService{
     }
 
     @Override
-    public void excluirJogador(Jogador jogador, Time time) {
-        timeRepository.excluirJogador(jogador, time);
+    public Time excluirJogador(Jogador jogador, Time time) {
+       return timeRepository.excluirJogador(jogador, time);
+    }
+
+    @Override
+    public List<Jogador> jogadorPorNome(String nome) {
+        return timeRepository.jogadorPorNome(nome);
     }
 
 

@@ -6,12 +6,11 @@ import jakarta.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.br.CPF;
 
-import java.time.LocalDate;
 import java.util.Date;
 import java.util.Objects;
 
 @Entity
-@Table(name = "pessoa")
+@Table(name = "tb_pessoa")
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Pessoa {
 

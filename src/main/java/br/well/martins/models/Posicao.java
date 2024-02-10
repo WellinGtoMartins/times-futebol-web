@@ -7,7 +7,7 @@ import org.hibernate.validator.constraints.Length;
 import java.util.Objects;
 
 @Entity
-@Table(name = "posicao")
+@Table(name = "tb_posicao")
 public class Posicao {
 
     @Id

@@ -1,11 +1,10 @@
 package br.well.martins.repositories;
 
 import br.well.martins.models.Jogador;
-import br.well.martins.models.Pessoa;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.Query;
+import jakarta.persistence.TypedQuery;
 
 import java.util.List;
 
@@ -17,21 +16,19 @@ public class JogadorRepositoryImpl implements Repository<Jogador>{
 
     @Override
     public List<Jogador> listar() {
-        return null;
+        return em.createQuery("select j from Jogador j", Jogador.class).getResultList();
     }
 
     @Override
     public List<Jogador> buscarPorNome(String nome) {
-        return null;
+        return em.createQuery("select j from Jogador j where j.nome like :nome", Jogador.class)
+                .setParameter("nome", "%" + nome + "%")
+                .getResultList();
     }
 
     @Override
     public void salvar(Jogador jogador) {
-        if(jogador.getId() != null && jogador.getId() > 0) {
-            em.merge(jogador);
-        } else {
-            em.persist(jogador);
-        }
+        em.merge(jogador);
     }
 
     @Override
@@ -43,4 +40,5 @@ public class JogadorRepositoryImpl implements Repository<Jogador>{
     public void excluir(Integer id) {
         em.remove(porId(id));
     }
+
 }

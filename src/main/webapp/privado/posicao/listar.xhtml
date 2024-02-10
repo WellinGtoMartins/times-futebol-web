@@ -7,51 +7,48 @@
     <ui:define name="conteudo">
         <p:card>
             <f:facet name="title">
-                <h:outputText value="Manutenção de Cidades"/>
+                <h:outputText value="Manutenção de Posições"/>
             </f:facet>
             <div style="display: flex; justify-content: center; align-items: center; width: 40%;">
                 <h:form style="flex: 50%">
-                    <p:commandButton value="Adicionar Cidade" oncomplete="PF('dlgCidade').show()" actionListener="#{cidadeController.novo()}" icon="pi pi-plus-circle"/>
+                    <p:commandButton value="Adicionar Posição" oncomplete="PF('dlgPosicao').show()" actionListener="#{posicaoController.novo()}" icon="pi pi-plus-circle"/>
                 </h:form>
-                <h:form >
-                    <div class="p-field p-grid">
+                <h:form>
+                    <div class="p-field p-grid p-my-2">
                         <label for="textoBuscar" class="col-fixed" style="width: 100px">Buscar</label>
                         <div class="col">
-                            <p:inputText id="textoBuscar" value="#{cidadeController.textoBuscar}" placeholder="Digite o nome">
-                                <p:ajax listener="#{cidadeController.buscar()}" event="keyup" update="tabela"/>
+                            <p:inputText id="textoBuscar" value="#{posicaoController.textoBuscar}" placeholder="Digite o nome">
+                                <p:ajax listener="#{posicaoController.buscar()}" event="keyup" update="tabela"/>
                             </p:inputText>
                         </div>
                     </div>
                 </h:form>
-           </div>
-            <p:dataTable id="tabela" value="#{cidadeController.listaCidades}"
-                         var="cid" style="max-width: 65%"
+            </div>
+            <p:dataTable id="tabela" value="#{posicaoController.listaPosicoes}"
+                         var="pos" style="max-width: 65%"
                          rows="5" paginator="true" paginatorPosition="bottom"
                          paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
                          currentPageReportTemplate="{startRecord}--{endRecord} de {totalRecords} registros"
                          rowsPerPageTemplate="5,10,{ShowAll|'All'}" allowUnsorting="true" sortMode="single">
                 <p:column headerText="ID">
-                    <h:outputText value="#{cid.id}"/>
+                    <h:outputText value="#{pos.id}"/>
                 </p:column>
-                <p:column headerText="Nome" sortBy="#{cid.nome}">
-                    <h:outputText value="#{cid.nome}"/>
-                </p:column>
-                <p:column headerText="Estado">
-                    <h:outputText value="#{cid.estado.nome}"/>
+                <p:column headerText="Nome" sortBy="#{pos.nome}">
+                    <h:outputText value="#{pos.nome}"/>
                 </p:column>
                 <p:column headerText="Ações">
                     <h:form id="acoesForm">
-                        <p:commandButton actionListener="#{cidadeController.alterar(cid)}"
+                        <p:commandButton actionListener="#{posicaoController.alterar(pos)}"
                                          value="Editar"
                                          class="ui-button-sucess p-mr-2"
                                          icon="pi pi-save"
-                                         oncomplete="PF('dlgCidade').show()"
-                                         update="formCidade"
+                                         oncomplete="PF('dlgPosicao').show()"
+                                         update="formPosicao"
                                          process="@this"
                                          style="margin-right: 10px">
-                            <p:resetInput target="formCidade"/>
+                            <p:resetInput target="formPosicao"/>
                         </p:commandButton>
-                        <p:commandButton actionListener="#{cidadeController.excluir(cid)}"
+                        <p:commandButton actionListener="#{posicaoController.excluir(pos)}"
                                          value="Excluir"
                                          class="ui-button-danger"
                                          icon="pi pi-trash"
@@ -61,32 +58,20 @@
                     </h:form>
                 </p:column>
             </p:dataTable>
-            <p:dialog header="Salvar Cidade" resizable="false" widgetVar="dlgCidade" showEffect="fade" modal="clip" width="500" height="240">
-                <h:form id="formCidade" prependId="false">
+            <p:dialog header="Salvar Posição" widgetVar="dlgPosicao" showEffect="fade" modal="true" width="500" height="100">
+                <h:form id="formPosicao" prependId="false">
                     <div class="p-field p-grid">
                         <p:outputLabel value="Nome" for="nome" class="col-fixed"/>
                         <div class="col">
-                            <p:inputText id="nome" value="#{cidadeController.cidade.nome}" label="Nome" style="width: 100%"/>
+                            <p:inputText id="nome" value="#{posicaoController.posicao.nome}" label="Nome" style="width: 100%"/>
                             <p:message for="nome" style="color: red;"/>
                         </div>
                     </div>
                     <div class="p-field p-grid">
-                        <p:outputLabel value="Estado" for="estado" class="col-fixed"
-                                       style="width: 200px"/>
                         <div class="col">
-                            <p:selectOneMenu id="estado" value="#{cidadeController.cidade.estado}" style="width: 100%">
-                                <f:selectItem itemLabel="--- selecione um Estado ---" itemValue="#{null}"/>
-                                <f:selectItems value="#{estados}" var="est" itemLabel="#{est.nome}"/>
-                                <f:converter binding="#{estadoConverter}"/>
-                            </p:selectOneMenu>
-                            <p:message for="estado" style="color: red;"/>
+                            <p:commandButton value="Salvar" actionListener="#{posicaoController.salvar()}" update="@form tabela"/>
                         </div>
-                    </div>
-                    <div class="p-field p-grid">
-                        <div class="col">
-                            <p:commandButton value="Salvar" actionListener="#{cidadeController.salvar()}" update="@form tabela"/>
-                        </div>
-                        <h:inputHidden value="#{cidadeController.cidade.id}"/>
+                        <h:inputHidden value="#{posicaoController.posicao.id}"/>
                     </div>
                 </h:form>
             </p:dialog>

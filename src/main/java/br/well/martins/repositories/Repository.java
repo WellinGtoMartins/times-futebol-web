@@ -10,6 +10,4 @@ public interface Repository<T>  {
     T porId(Integer id);
     void excluir(Integer id);
 
-
-
 }

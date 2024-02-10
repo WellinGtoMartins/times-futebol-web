@@ -1,0 +1,22 @@
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 550px;
+}
+
+#container h2 {
+    display: block;
+    max-width: 80%;
+}
+
+#container p {
+    margin-top: 10px;
+    max-width: 80%;
+}
+
+#rodape {
+    text-align: center;
+}

@@ -5,12 +5,11 @@ import jakarta.validation.constraints.NotBlank;
 import org.hibernate.validator.constraints.Length;
 
 import java.util.HashSet;
-import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
 @Entity
-@Table(name = "estado",  uniqueConstraints = {@UniqueConstraint(columnNames = {"nome"}, name = "uk_nome_estado")})
+@Table(name = "tb_estado",  uniqueConstraints = {@UniqueConstraint(columnNames = {"nome"}, name = "uk_nome_estado")})
 public class Estado {
 
     @Id

@@ -18,17 +18,15 @@ public interface TimeService {
     List<Cidade> listarCidades();
     Optional<Cidade> cidadePorId(Integer id);
 
-    List<Usuario> listarUsuarios();
-    Optional<Usuario> usuarioPorNomeUsuario(String nomeUsuario);
-
     List<Pessoa> listarPessoas();
     Optional<Pessoa> pessoaPorId(Integer id);
 
     List<Posicao> listarPosicoes();
     Optional<Posicao> posicaoPorId(Integer id);
 
-    void adicionarJogador(Jogador jogador, Time time);
-    void excluirJogador(Jogador jogador, Time time);
+    void adicionarJogador(Jogador jogador, Time time) throws Exception;
+    Time excluirJogador(Jogador jogador, Time time);
+    List<Jogador> jogadorPorNome(String nome);
 
 
 }
