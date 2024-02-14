@@ -98,7 +98,6 @@ public class TimeController implements Serializable {
     public void salvarJogador() {
         try {
             if (novoJogador) {
-                jogadorService.salvar(jogador);
                 timeService.adicionarJogador(jogador, time);
                 mensagem = " jogador " + jogador.getNome() + " adicionado com sucesso!";
             } else {
@@ -107,7 +106,7 @@ public class TimeController implements Serializable {
             facesContext.addMessage(null, new FacesMessage(mensagem));
             this.jogador = new Jogador();
         } catch (Exception e) {
-            facesContext.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "CPF " + jogador.getCpf() + " duplicado", null));
+            facesContext.addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Jogador com o mesmo CPF já existe.", null));
         }
     }
 
@@ -118,12 +117,16 @@ public class TimeController implements Serializable {
 
     public void excluirJogador(Integer rowIndex) {
         this.jogador = time.getJogadores().get(rowIndex);
-        time = timeService.excluirJogador(jogador, time);
-        jogadorService.excluir(jogador.getId());
+        if (jogador.getId() != null) {
+            time = timeService.excluirJogador(jogador, time);
+            jogadorService.excluir(jogador.getId());
+        } else {
+            time.getJogadores().remove(jogador);
+        }
     }
 
     public void buscarJogador() {
-        time.setJogadores(timeService.jogadorPorNome(textoBuscar));
+        time.setJogadores(timeService.jogadorPorNome(textoBuscar, time.getId()));
     }
 
     @Produces

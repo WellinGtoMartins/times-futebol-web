@@ -1,8 +1,6 @@
 package br.well.martins.controllers;
 
-import br.well.martins.models.Estado;
 import br.well.martins.models.Pessoa;
-import br.well.martins.services.EstadoService;
 import br.well.martins.services.PessoaService;
 import jakarta.annotation.PostConstruct;
 import jakarta.faces.application.FacesMessage;
@@ -10,7 +8,6 @@ import jakarta.faces.context.FacesContext;
 import jakarta.faces.view.ViewScoped;
 import jakarta.inject.Inject;
 import jakarta.inject.Named;
-import jakarta.validation.ConstraintViolationException;
 import org.primefaces.PrimeFaces;
 
 import java.io.Serializable;

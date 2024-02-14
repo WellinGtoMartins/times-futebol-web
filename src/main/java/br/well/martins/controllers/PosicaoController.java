@@ -1,6 +1,5 @@
 package br.well.martins.controllers;
 
-import br.well.martins.models.Pessoa;
 import br.well.martins.models.Posicao;
 import br.well.martins.services.PosicaoService;
 import jakarta.annotation.PostConstruct;
@@ -73,9 +72,9 @@ public class PosicaoController implements Serializable {
     }
 
 
-    public void excluir(Pessoa pessoa) {
-        service.excluir(pessoa.getId());
-        facesContext.addMessage(null, new FacesMessage(pessoa.getNome() + " eliminado com êxito!"));
+    public void excluir(Posicao posicao) {
+        service.excluir(posicao.getId());
+        facesContext.addMessage(null, new FacesMessage(posicao.getNome() + " eliminado com êxito!"));
         listaPosicoes = service.listar();
     }
 

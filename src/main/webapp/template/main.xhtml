@@ -17,9 +17,7 @@
          </div>
          <h:form>
             <p:megaMenu>
-               <p:menuitem value="Home"
-                           outcome="/index.xhtml"
-                           icon="pi pi-home"/>
+               <p:menuitem value="Home" outcome="/privado/index.xhtml" icon="pi pi-home"/>
                <ui:insert name="item"/>
                <p:submenu label="Cadastros">
                   <p:column>
@@ -34,7 +32,7 @@
                                     value="Times"
                                     ajax="false"/>
                         <p:menuitem action="#{pessoaController.listar()}"
-                                    value="Técnicos"
+                                    value="Pessoas"
                                     ajax="false"/>
                         <p:menuitem action="#{posicaoController.listar()}"
                                     value="Posições"
@@ -42,19 +40,22 @@
                      </p:submenu>
                   </p:column>
                </p:submenu>
+               <p:menuitem id="logout" icon="pi pi-fw pi-sign-out" action="#{logoutController.logout}" value="Logout"/>
             </p:megaMenu>
          </h:form>
          <div class="p-mb-2">
             <p:messages globalOnly="true" closable="true">
                <p:autoUpdate/>
             </p:messages>
+            <h:outputText style="margin: 20px;" value="Bem-vindo #{usuarioController.usuario.login}! &#128513;"/>
+            <br/>
             <ui:insert name="conteudo"/>
          </div>
          <p:divider/>
          <div class="p-mb-2">
             <footer id="rodape">
                <p><h:outputText value="Desenvolvido por Wellington 2024"/></p>
-               <p><h:outputText value="Todos os direitos reservados"/></p>
+               <p><h:outputText value="©Todos os direitos reservados"/></p>
             </footer>
          </div>
       </p:card>

@@ -6,12 +6,13 @@
                 template="/template/main.xhtml">
     <ui:define name="conteudo">
         <p:card>
+            <br/>
             <f:facet name="title">
-                <h:outputText value="Manutenção de Técnicos"/>
+                <h:outputText value="Manutenção de Pessoas"/>
             </f:facet>
             <div style="display: flex; justify-content: center; align-items: center; width: 40%;">
                 <h:form style="flex: 50%">
-                    <p:commandButton value="Adicionar Técnico" oncomplete="PF('dlgPessoa').show()" actionListener="#{pessoaController.novo()}" icon="pi pi-plus-circle"/>
+                    <p:commandButton value="Adicionar Pessoa" oncomplete="PF('dlgPessoa').show()" actionListener="#{pessoaController.novo()}" icon="pi pi-plus-circle" rendered="#{usuarioController.usuario.admin}"/>
                 </h:form>
                 <h:form>
                     <div class="p-field p-grid p-my-2">
@@ -53,7 +54,7 @@
                                          oncomplete="PF('dlgPessoa').show()"
                                          update="formPessoa"
                                          process="@this"
-                                         style="margin-right: 10px">
+                                         style="margin-right: 10px" rendered="#{usuarioController.usuario.admin}">
                             <p:resetInput target="formPessoa"/>
                         </p:commandButton>
                         <p:commandButton actionListener="#{pessoaController.excluir(pes)}"
@@ -62,11 +63,11 @@
                                          icon="pi pi-trash"
                                          oncomplete="return confirm('Tem certeza que quer excluir?')"
                                          update="tabela"
-                                         process="@this"/>
+                                         process="@this" rendered="#{usuarioController.usuario.admin}"/>
                     </h:form>
                 </p:column>
             </p:dataTable>
-            <p:dialog header="Salvar Técnico" widgetVar="dlgPessoa" showEffect="fade" modal="true" width="500" height="260">
+            <p:dialog header="Salvar Pessoa" widgetVar="dlgPessoa" showEffect="fade" modal="true" width="500" height="260">
                 <h:form id="formPessoa" prependId="false">
                     <div class="p-field p-grid">
                         <p:outputLabel value="Nome" for="nome" class="col-fixed"/>

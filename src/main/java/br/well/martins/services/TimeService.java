@@ -1,5 +1,6 @@
 package br.well.martins.services;
 
+import br.well.martins.configs.JogadorDuplicadoException;
 import br.well.martins.models.*;
 import jakarta.ejb.Local;
 
@@ -24,9 +25,9 @@ public interface TimeService {
     List<Posicao> listarPosicoes();
     Optional<Posicao> posicaoPorId(Integer id);
 
-    void adicionarJogador(Jogador jogador, Time time) throws Exception;
+    void adicionarJogador(Jogador jogador, Time time) throws JogadorDuplicadoException;
     Time excluirJogador(Jogador jogador, Time time);
-    List<Jogador> jogadorPorNome(String nome);
+    List<Jogador> jogadorPorNome(String nome, Integer idTime);
 
 
 }

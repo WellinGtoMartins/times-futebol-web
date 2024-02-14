@@ -1,4 +1,4 @@
-package br.well.martins.configs;
+package br.well.martins.converters;
 
 import br.well.martins.models.Estado;
 import br.well.martins.services.CidadeService;

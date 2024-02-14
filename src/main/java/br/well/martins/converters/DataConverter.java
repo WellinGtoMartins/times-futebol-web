@@ -1,4 +1,4 @@
-package br.well.martins.configs;
+package br.well.martins.converters;
 
 import jakarta.faces.component.UIComponent;
 import jakarta.faces.context.FacesContext;
@@ -8,8 +8,6 @@ import jakarta.faces.convert.FacesConverter;
 import java.io.Serializable;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 @FacesConverter(value = "dataConverter")

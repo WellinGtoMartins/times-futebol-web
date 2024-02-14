@@ -3,6 +3,7 @@ package br.well.martins.services;
 import br.well.martins.models.Cidade;
 import br.well.martins.models.Estado;
 import br.well.martins.repositories.Repository;
+import jakarta.annotation.security.PermitAll;
 import jakarta.ejb.Stateless;
 import jakarta.inject.Inject;
 

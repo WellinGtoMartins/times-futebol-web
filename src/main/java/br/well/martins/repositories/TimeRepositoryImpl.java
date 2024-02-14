@@ -1,10 +1,12 @@
 package br.well.martins.repositories;
 
+import br.well.martins.configs.JogadorDuplicadoException;
 import br.well.martins.models.Jogador;
 import br.well.martins.models.Time;
 import jakarta.enterprise.context.RequestScoped;
 import jakarta.inject.Inject;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.TypedQuery;
 
 import java.util.List;
 
@@ -28,11 +30,7 @@ public class TimeRepositoryImpl implements TimeRepository {
 
     @Override
     public void salvar(Time time){
-        if (time.getId() != null && time.getId() > 0) {
-            em.merge(time);
-        } else {
-            em.persist(time);
-        }
+        em.merge(time);
     }
 
     @Override
@@ -49,13 +47,12 @@ public class TimeRepositoryImpl implements TimeRepository {
     }
 
     @Override
-    public void adicionarJogador(Jogador jogador, Time time) {
-        jogador.setTime(time);
-        time.getJogadores().add(jogador);
-        try {
-            salvar(time);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+    public void adicionarJogador(Jogador jogador, Time time) throws JogadorDuplicadoException {
+        if (existeJogadorComCPF(jogador.getCpf())) {
+            throw new JogadorDuplicadoException();
+        } else {
+            jogador.setTime(time);
+            time.getJogadores().add(jogador);
         }
     }
 
@@ -69,9 +66,19 @@ public class TimeRepositoryImpl implements TimeRepository {
     }
 
     @Override
-    public List<Jogador> jogadorPorNome(String nome) {
-        return em.createQuery("select j from Time t join t.jogadores j where j.nome like :nome", Jogador.class)
+    public List<Jogador> jogadorPorNome(String nome, Integer idTime) {
+        return em.createQuery("SELECT j FROM Time t JOIN t.jogadores j WHERE j.nome LIKE :nome AND t.id = :idTime", Jogador.class)
                 .setParameter("nome", "%" + nome + "%")
+                .setParameter("idTime", idTime)
                 .getResultList();
+    }
+
+    @Override
+    public boolean existeJogadorComCPF(String cpf) {
+        String jpql = "SELECT COUNT(j) FROM Jogador j WHERE j.cpf = :cpf";
+        TypedQuery<Long> query = em.createQuery(jpql, Long.class);
+        query.setParameter("cpf", cpf);
+        Long count = query.getSingleResult();
+        return count > 0;
     }
 }

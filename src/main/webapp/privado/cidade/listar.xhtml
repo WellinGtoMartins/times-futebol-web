@@ -6,12 +6,13 @@
                 template="/template/main.xhtml">
     <ui:define name="conteudo">
         <p:card>
+            <br/>
             <f:facet name="title">
                 <h:outputText value="Manutenção de Cidades"/>
             </f:facet>
             <div style="display: flex; justify-content: center; align-items: center; width: 40%;">
                 <h:form style="flex: 50%">
-                    <p:commandButton value="Adicionar Cidade" oncomplete="PF('dlgCidade').show()" actionListener="#{cidadeController.novo()}" icon="pi pi-plus-circle"/>
+                    <p:commandButton value="Adicionar Cidade" oncomplete="PF('dlgCidade').show()" actionListener="#{cidadeController.novo()}" icon="pi pi-plus-circle" rendered="#{usuarioController.usuario.admin}"/>
                 </h:form>
                 <h:form >
                     <div class="p-field p-grid">
@@ -48,7 +49,7 @@
                                          oncomplete="PF('dlgCidade').show()"
                                          update="formCidade"
                                          process="@this"
-                                         style="margin-right: 10px">
+                                         style="margin-right: 10px" rendered="#{usuarioController.usuario.admin}">
                             <p:resetInput target="formCidade"/>
                         </p:commandButton>
                         <p:commandButton actionListener="#{cidadeController.excluir(cid)}"
@@ -57,7 +58,7 @@
                                          icon="pi pi-trash"
                                          oncomplete="return confirm('Tem certeza que quer excluir?')"
                                          update="tabela"
-                                         process="@this"/>
+                                         process="@this" rendered="#{usuarioController.usuario.admin}"/>
                     </h:form>
                 </p:column>
             </p:dataTable>

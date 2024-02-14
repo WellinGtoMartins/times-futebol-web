@@ -9,47 +9,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07786c5b-0ba5-4dda-ab92-f5590c381a8b" name="Changes" comment="Até aqui aparentimente tudo funcionando">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/PessoaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/PosicaoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/PessoaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/PessoaServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/PosicaoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/PosicaoServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/privado/pessoa/listar.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/privado/posicao/listar.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/estilo.css" afterDir="false" />
+    <list default="true" id="07786c5b-0ba5-4dda-ab92-f5590c381a8b" name="Changes" comment="Atualização">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/configs/JogadorDuplicadoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/AbstractController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/LogoutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/UsuarioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/filters/AbstractFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/filters/LoginFiltro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Usuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/UsuarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/UsuarioRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/UsuarioService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/UsuarioServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jboss-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/privado/acessoNegado.xhtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/privado/login.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/configs/UsuarioConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/configs/CidadeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/converters/CidadeConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/configs/DataConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/converters/DataConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/configs/EstadoConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/converters/EstadoConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/configs/PessoaConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/converters/PessoaConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/configs/PosicaoConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/converters/PosicaoConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/CidadeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/CidadeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/PessoaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/PessoaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/PosicaoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/PosicaoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Cidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Cidade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Estado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Estado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Jogador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Jogador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Permissao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Posicao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Posicao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Time.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Usuario.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/JogadorRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/JogadorRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/PessoaRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/PessoaRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/PosicaoRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/PosicaoRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/Repository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/TimeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/TimeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/TimeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/TimeRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/UsuarioRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/UsuarioRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/services/CidadeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/CidadeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/services/CidadeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/CidadeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/services/EstadoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/EstadoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/services/EstadoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/EstadoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/services/JogadorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/JogadorServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/services/TimeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/TimeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/services/TimeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/TimeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/privado/index.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/privado/cidade/listar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/privado/cidade/listar.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/privado/estado/listar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/privado/estado/listar.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/privado/pessoa/listar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/privado/pessoa/listar.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/privado/posicao/listar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/privado/posicao/listar.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/privado/time/form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/privado/time/form.xhtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/privado/time/listar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/privado/time/listar.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/estilo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/template/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/main.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,9 +65,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="jsf" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -120,27 +126,30 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/JakartaEE/times-futebol-web/src/main/webapp/privado",
+    "last_opened_file_path": "C:/JakartaEE/webapp-jsf3-jaas",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Java",
+    "settings.editor.selected.configurable": "preferences.editor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp" />
       <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp\privado" />
       <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp\privado\time" />
       <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp\privado\cidade" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp\privado" />
       <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp" />
-      <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp\WEB-INF" />
-      <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp\resources\img" />
+      <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp\pages\privado" />
+      <recent name="C:\JakartaEE\times-futebol-web\src\main\java\br\well" />
+      <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp\pages\users" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.well.martins.controllers" />
@@ -222,6 +231,20 @@
         </option>
       </method>
     </configuration>
+    <configuration default="true" type="JBossConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="SERVER" value="" />
+        <option name="BINDING_SET_NAME" value="" />
+        <option name="DOMAIN" value="false" />
+        <option name="SERVER_GROUP" value="" />
+        <option name="USERNAME" value="" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="JBoss" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -280,7 +303,22 @@
       <workItem from="1707258475848" duration="11869000" />
       <workItem from="1707345903727" duration="10015000" />
       <workItem from="1707430891499" duration="10984000" />
-      <workItem from="1707518175110" duration="13845000" />
+      <workItem from="1707518175110" duration="14331000" />
+      <workItem from="1707569241311" duration="17981000" />
+      <workItem from="1707603146008" duration="2468000" />
+      <workItem from="1707614069138" duration="535000" />
+      <workItem from="1707617732417" duration="808000" />
+      <workItem from="1707682736617" duration="1228000" />
+      <workItem from="1707688715029" duration="5328000" />
+      <workItem from="1707750330853" duration="848000" />
+      <workItem from="1707753403503" duration="726000" />
+      <workItem from="1707754532446" duration="1054000" />
+      <workItem from="1707757488675" duration="615000" />
+      <workItem from="1707758427942" duration="611000" />
+      <workItem from="1707768970142" duration="17134000" />
+      <workItem from="1707795095501" duration="4678000" />
+      <workItem from="1707831590462" duration="30275000" />
+      <workItem from="1707914293314" duration="8271000" />
     </task>
     <task id="LOCAL-00001" summary="Até aqui salvar jogador e alterar estava funcionando">
       <option name="closed" value="true" />
@@ -298,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707091475305</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Atualização">
+      <option name="closed" value="true" />
+      <created>1707532569912</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707532569912</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,19 +353,56 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Até aqui salvar jogador e alterar estava funcionando" />
     <MESSAGE value="Até aqui aparentimente tudo funcionando" />
-    <option name="LAST_COMMIT_MESSAGE" value="Até aqui aparentimente tudo funcionando" />
+    <MESSAGE value="Atualização" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualização" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java</url>
-          <line>97</line>
-          <properties class="br.well.martins.controllers.TimeController" method="salvarJogador">
+          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/repositories/TimeRepositoryImpl.java</url>
+          <line>59</line>
+          <properties class="br.well.martins.repositories.TimeRepositoryImpl" method="excluirJogador">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="7" />
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/phaselistener/LoginPhaseListener.java</url>
+          <line>11</line>
+          <properties class="br.well.martins.phaselistener.LoginPhaseListener">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/filters/LoginFiltro.java</url>
+          <line>19</line>
+          <properties class="br.well.martins.filters.LoginFiltro" method="doFilter">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/controllers/LoginController.java</url>
+          <line>65</line>
+          <properties class="br.well.martins.controllers.LoginController" method="entrar">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/controllers/LoginController.java</url>
+          <line>56</line>
+          <properties class="br.well.martins.controllers.LoginController" method="isValidLogin">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

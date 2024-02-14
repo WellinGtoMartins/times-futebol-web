@@ -1,6 +1,7 @@
 package br.well.martins.services;
 
 
+import br.well.martins.configs.JogadorDuplicadoException;
 import br.well.martins.models.*;
 import br.well.martins.repositories.Repository;
 import br.well.martins.repositories.TimeRepository;
@@ -32,11 +33,7 @@ public class TimeServiceImpl implements TimeService {
 
     @Override
     public void salvar(Time time) {
-        try {
-            timeRepository.salvar(time);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+        timeRepository.salvar(time);
     }
 
     @Override
@@ -86,8 +83,8 @@ public class TimeServiceImpl implements TimeService {
     }
 
     @Override
-    public void adicionarJogador(Jogador jogador, Time time) {
-        timeRepository.adicionarJogador(jogador, time);
+    public void adicionarJogador(Jogador jogador, Time time) throws JogadorDuplicadoException {
+       timeRepository.adicionarJogador(jogador, time);
     }
 
     @Override
@@ -96,8 +93,8 @@ public class TimeServiceImpl implements TimeService {
     }
 
     @Override
-    public List<Jogador> jogadorPorNome(String nome) {
-        return timeRepository.jogadorPorNome(nome);
+    public List<Jogador> jogadorPorNome(String nome, Integer idTime) {
+        return timeRepository.jogadorPorNome(nome,idTime);
     }
 
 

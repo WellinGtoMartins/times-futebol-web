@@ -41,6 +41,7 @@ public class CidadeController implements Serializable {
         cidade = new Cidade();
     }
 
+
     public void novo() {
         this.id = null;
         this.cidade = new Cidade();

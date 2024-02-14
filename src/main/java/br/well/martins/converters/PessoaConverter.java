@@ -1,4 +1,4 @@
-package br.well.martins.configs;
+package br.well.martins.converters;
 
 import br.well.martins.models.Pessoa;
 import br.well.martins.services.TimeService;
