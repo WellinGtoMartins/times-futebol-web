@@ -1,7 +1,7 @@
 package br.well.martins.services;
 
 
-import br.well.martins.configs.JogadorDuplicadoException;
+import br.well.martins.exceptions.JogadorDuplicadoException;
 import br.well.martins.models.*;
 import br.well.martins.repositories.Repository;
 import br.well.martins.repositories.TimeRepository;

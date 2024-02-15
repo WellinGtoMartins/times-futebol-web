@@ -1,4 +1,4 @@
-package br.well.martins.configs;
+package br.well.martins.exceptions;
 
 public class JogadorDuplicadoException extends Exception {
 

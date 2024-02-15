@@ -9,52 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07786c5b-0ba5-4dda-ab92-f5590c381a8b" name="Changes" comment="Atualização">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/configs/JogadorDuplicadoException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/AbstractController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/LogoutController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/UsuarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/filters/AbstractFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/filters/LoginFiltro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/models/Usuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/UsuarioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/UsuarioRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/UsuarioService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/UsuarioServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/faces-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jboss-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/privado/acessoNegado.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/privado/login.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="07786c5b-0ba5-4dda-ab92-f5590c381a8b" name="Changes" comment="Inicio">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/configs/CidadeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/converters/CidadeConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/configs/DataConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/converters/DataConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/configs/EstadoConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/converters/EstadoConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/configs/PessoaConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/converters/PessoaConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/configs/PosicaoConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/converters/PosicaoConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/CidadeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/CidadeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/PessoaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/PessoaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/PosicaoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/PosicaoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/controllers/TimeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/JogadorRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/JogadorRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/PessoaRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/PessoaRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/configs/JogadorDuplicadoException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/exceptions/JogadorDuplicadoException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/TimeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/TimeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/TimeRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/repositories/TimeRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/services/CidadeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/CidadeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/services/TimeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/TimeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/well/martins/services/TimeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/well/martins/services/TimeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/privado/index.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/privado/cidade/listar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/privado/cidade/listar.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/privado/estado/listar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/privado/estado/listar.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/privado/pessoa/listar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/privado/pessoa/listar.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/privado/posicao/listar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/privado/posicao/listar.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/privado/time/form.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/privado/time/form.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/privado/time/listar.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/privado/time/listar.xhtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/estilo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/estilo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/template/main.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/template/main.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/privado/login.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/privado/login.xhtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +59,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -112,31 +77,31 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JBoss/WildFly Server.JBoss/WildFly 27.0.0.Final.executor": "Run",
-    "JBoss/WildFly Server.JBoss/WildFly 31.0.0.Final.executor": "Run",
-    "Maven.times-futebol-web [clean].executor": "Run",
-    "Maven.times-futebol-web [deploy].executor": "Run",
-    "Maven.times-futebol-web [install].executor": "Run",
-    "Maven.times-futebol-web [package].executor": "Run",
-    "Maven.times-futebol-web [payara-micro:bundle].executor": "Run",
-    "Maven.times-futebol-web [wildfly:deploy].executor": "Run",
-    "Payara Server.Payara 6.10.0.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/JakartaEE/webapp-jsf3-jaas",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JBoss/WildFly Server.JBoss/WildFly 27.0.0.Final.executor&quot;: &quot;Run&quot;,
+    &quot;JBoss/WildFly Server.JBoss/WildFly 31.0.0.Final.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.times-futebol-web [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.times-futebol-web [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.times-futebol-web [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.times-futebol-web [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.times-futebol-web [payara-micro:bundle].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.times-futebol-web [wildfly:deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Payara Server.Payara 6.10.0.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/JakartaEE/webapp-jsf3-jaas&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\JakartaEE\times-futebol-web\src\main\webapp" />
@@ -231,20 +196,6 @@
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="JBossConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings>
-        <option name="SERVER" value="" />
-        <option name="BINDING_SET_NAME" value="" />
-        <option name="DOMAIN" value="false" />
-        <option name="SERVER_GROUP" value="" />
-        <option name="USERNAME" value="" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="JBoss" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -318,7 +269,9 @@
       <workItem from="1707768970142" duration="17134000" />
       <workItem from="1707795095501" duration="4678000" />
       <workItem from="1707831590462" duration="30275000" />
-      <workItem from="1707914293314" duration="8271000" />
+      <workItem from="1707914293314" duration="12418000" />
+      <workItem from="1707951987709" duration="605000" />
+      <workItem from="1708015659691" duration="723000" />
     </task>
     <task id="LOCAL-00001" summary="Até aqui salvar jogador e alterar estava funcionando">
       <option name="closed" value="true" />
@@ -344,17 +297,37 @@
       <option name="project" value="LOCAL" />
       <updated>1707532569912</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Inicio">
+      <option name="closed" value="true" />
+      <created>1707938066055</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707938066055</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Até aqui salvar jogador e alterar estava funcionando" />
     <MESSAGE value="Até aqui aparentimente tudo funcionando" />
     <MESSAGE value="Atualização" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualização" />
+    <MESSAGE value="Inicio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inicio" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -376,15 +349,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/filters/LoginFiltro.java</url>
-          <line>19</line>
-          <properties class="br.well.martins.filters.LoginFiltro" method="doFilter">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/br/well/martins/controllers/LoginController.java</url>
